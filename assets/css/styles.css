@@ -1,37 +1,50 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
     display: flex;
-    /* position: fixed; */
+    position: fixed;
     background-color: white;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     justify-content: flex-end;
 }
 
-nav ul {
-    display: flex;
+nav table tr td {
     list-style-type: none;
     padding: 20px;
 }
 
-li a {
+.nav-link {
     text-decoration: none;
-    font-size: 20px;
-    color: black;
-    border: 2px solid black;
+    color: #222831;
 }
 
-li a:hover {
-    color: white;
-    background-color: black;
+.navigation:hover{
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+nav table, nav table td {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    padding: 20px;
 }
 
 /* HOME */
+
+#home {
+    padding: 100px 0 100px 0;
+}
 
 .home {
     display: flex;
@@ -44,7 +57,7 @@ li a:hover {
     display: flex;
     text-align: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 50px;
     color: rgb(61, 61, 61);
 }
 
@@ -80,7 +93,7 @@ li a:hover {
 }
 
 .contact {
-    background-color: rgb(237, 237, 237);
+    background-color: #EEEEEE;
     border-radius: 8px;
     padding: 80px;
 }
@@ -126,8 +139,9 @@ li a:hover {
 
 .form-submit a {
     text-decoration: none;
-    color: white;
-    background-color: black;
+    color: #EEEEEE;
+    background-color: #222831;
+    border: 2px solid #222831;
     padding: 20px;
     border-radius: 8px;
     padding-left: 45%;
@@ -136,6 +150,81 @@ li a:hover {
 }
 
 .form-submit a:hover {
-    color: black;
-    background-color: white;
+    color: #222831;
+    background-color: #EEEEEE;
+    border: 2px solid #222831;
+}
+
+/* TESTI */
+
+.testi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin: 50px;
+}
+
+.testi-img {
+    width: 70px;
+    color: rgb(139, 139, 139);
+}
+
+.about p {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+}
+
+/* ABOUT INFO */
+.one {
+    display: flex;
+    align-items: center;
+}
+
+.one h3 {
+    padding: 20px;
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    background-color: #EEEEEE;
+}
+
+.one p {
+    color: rgb(139, 139, 139);
+    font-size: 25px;
+    font-weight: normal;
+}
+
+/* OUR PACKAGE */
+
+.title {
+    background-color: #EEEEEE;
+    padding: 15vh 0 15vh 0;
+}
+
+.title h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(61, 61, 61);
+}
+
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 100px 60px 100px;
+}
+
+.packages > .package {
+    flex: 1 1 30%;
+}
+
+.package {
+
 }
