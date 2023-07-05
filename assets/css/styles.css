@@ -14,30 +14,22 @@ nav {
     justify-content: flex-end;
 }
 
-nav table tr td {
+nav ul {
+    display: flex;
     list-style-type: none;
-    padding: 20px;
+    padding: 30px;
 }
 
-.nav-link {
+
+nav ul li a {
     text-decoration: none;
     color: #222831;
-}
-
-.navigation:hover{
-    background-color: #222831;
-    color: #EEEEEE;
-}
-
-nav table, nav table td {
-    border: 1px solid black;
-    margin: 20px;
-}
-
-table {
-    border-collapse: collapse;
-    border-radius: 1em;
     padding: 20px;
+}
+
+nav ul li a:hover {
+    color: #EEEEEE;
+    background-color: #222831;
 }
 
 /* HOME */
@@ -79,12 +71,12 @@ table {
     gap: 30px;
 }
 
-.img img{
+.img img {
     object-fit: contain;
     width: 100%;
 }
 
-.img p{
+.img p {
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -217,14 +209,120 @@ table {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    padding: 60px 100px 60px 100px;
+    gap: 80px;
+    padding: 60px 100px 100px 100px;
 }
 
-.packages > .package {
+.packages>.package {
     flex: 1 1 30%;
 }
 
-.package {
+.package h1 {
+    font-size: 30px;
+    color: #222831;
+}
 
+.package p {
+    padding: 20px 0 0 0;
+    font-size: 25px;
+}
+
+/* CONTACT CONTENT */
+.contact_content {
+    padding: 100px;
+}
+
+.contact_head {
+    text-align: center;
+}
+
+.contact_head h1 {
+    font-size: 50px;
+    color: #222831;
+    padding: 0 0 20px 0;
+}
+
+.contact_head p {
+    font-size: 25px;
+    color: rgb(139, 139, 139);
+    padding: 20px 0 20px 0;
+}
+
+.contact_button {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contact_button a {
+    color: #EEEEEE;
+    background-color: #222831;
+    border: 2px solid #222831;
+    padding: 30px 120px 30px 120px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.contact_button a:hover {
+    color: #222831;
+    background-color: #EEEEEE;
+}
+
+/* FOOTER */
+footer {
+    padding: 50px;
+}
+
+.footer_content {
+    text-align: center;
+}
+
+.footer_title {
+    font-size: 20px;
+}
+
+.footer_child {
+    padding: 20px 0 20px 0;
+    font-size: 25px;
+    color: rgb(139, 139, 139);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer_end {
+    font-size: 25px;
+    color: rgb(139, 139, 139);
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .content {
+        margin: 0 20px 0 20px;
+    }
+
+    .contact {
+        padding: 50px 40px 100px 40px;
+    }
+
+    .packages {
+        padding: 60px 20px 100px 20px;
+    }
+
+    .packages>.package {
+        flex: 1 1 100%;
+    }
 }
