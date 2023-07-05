@@ -25,6 +25,7 @@ nav ul li a {
     text-decoration: none;
     color: #222831;
     padding: 20px;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
@@ -300,29 +301,91 @@ footer {
 /* RESPONSIVE */
 
 @media only screen and (max-width: 768px) {
+
+    /* NAV */
     nav {
         justify-content: center;
+    }
+
+    /* CONTENT */
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .home p {
+        font-size: 20px;
     }
 
     .content {
         flex-direction: column;
     }
+
+    /* PACKAGE */
+    .title h1 {
+        font-size: 40px;
+    }
+
+    /* CONTACT */
+    .contact_head h1 {
+        font-size: 40px;
+        color: #222831;
+        padding: 0 0 20px 0;
+    }
+
+    .contact_head p {
+        font-size: 20px;
+    }
+
+    .contact_button a {
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    .footer_title h1 {
+        font-size: 35px;
+    }
+
+    .footer_child {
+        font-size: 20px;
+    }
+
+    .footer_end {
+        font-size: 20px;
+    }
+
 }
 
 @media only screen and (max-width: 512px) {
+
+    /* CONTENT */
     .content {
         margin: 0 20px 0 20px;
     }
 
+    /* CONTACT */
     .contact {
         padding: 50px 40px 100px 40px;
     }
 
+    /* PACKAGE */
     .packages {
         padding: 60px 20px 100px 20px;
     }
 
     .packages>.package {
         flex: 1 1 100%;
+    }
+
+    /* CONTACT */
+    .contact_content {
+        padding: 100px 20px 100px 20px;
+    }
+
+    .contact_button a {
+        color: #EEEEEE;
+        background-color: #222831;
+        border: 2px solid #222831;
+        padding: 20px;
+        font-size: 20px;
     }
 }
