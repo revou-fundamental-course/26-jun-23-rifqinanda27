@@ -28,7 +28,23 @@
         </div>
         <div class="content">
             <div class="img">
-                <img src="https://blog.alfagift.id/wp-content/uploads/2023/03/groceries.jpg" alt="E-Groceries">
+                <div class="slideshow-container">
+                    <div class="slideshow fade">
+                        <img src="assets/img/img1.jpg" alt="E-Groceries">
+                    </div>
+                    <div class="slideshow fade">
+                        <img src="assets/img/img2.jpg" alt="E-Groceries">
+                    </div>
+                    <div class="slideshow fade">
+                        <img src="assets/img/img3.jpg" alt="E-Groceries">
+                    </div>
+                    <div style="text-align:center" class="dot-m">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
                 <p>"setiap hari beli sayur buah yang fresh disini"</p>
                 <div class="testi">
                     <div class="testi-img">
@@ -64,18 +80,24 @@
                 <form action="#">
                     <div class="form-label">
                         <label for="name">Your Name:</label>
-                        <input type="text" placeholder="Your name here . . .">
+                        <input type="text" id="name" placeholder="Your name here . . .">
                     </div>
                     <div class="form-label">
                         <label for="email">Email Address:</label>
-                        <input type="email" placeholder="Your email here . . .">
+                        <input type="email" id="email" placeholder="Your email here . . .">
                     </div>
                     <div class="form-label">
-                        <label for="name">Your Name:</label>
-                        <input type="text" placeholder="Your name here . . .">
+                        <label for="interest">What are you interested in?</label>
+                        <select name="interest" id="interest">
+                            <option disabled selected value> -- please select what you interest -- </option>
+                            <option value="sports">Sports</option>
+                            <option value="gaming">Gaming</option>
+                            <option value="musics">Musics</option>
+                            <option value="other">Other . . .</option>
+                        </select>
                     </div>
                     <div class="form-submit">
-                        <a href="">Send</a>
+                        <a onclick="sendContact()">Send</a>
                     </div>
                 </form>
             </div>

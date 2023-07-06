@@ -12,6 +12,7 @@ nav {
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     justify-content: flex-end;
+    z-index: 3;
 }
 
 nav ul {
@@ -75,6 +76,7 @@ nav ul li a:hover {
 .img img {
     object-fit: contain;
     width: 100%;
+    z-index: 1;
 }
 
 .img p {
@@ -123,6 +125,15 @@ nav ul li a:hover {
     padding: 20px;
     border-color: rgb(139, 139, 139);
     border-radius: 5px;
+}
+
+.form-label select {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border-color: rgb(139, 139, 139);
+    border-radius: 5px;
+    appearance: none;
 }
 
 .form-submit {
@@ -300,7 +311,7 @@ footer {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
     /* NAV */
     nav {
@@ -355,7 +366,18 @@ footer {
 
 }
 
-@media only screen and (max-width: 512px) {
+@media only screen and (max-width: 600px) {
+    .about p {
+        font-size: 20px;
+    }
+
+    .one p {
+        font-size: 18px;
+    }
+
+    nav ul {
+        padding: 30px 10px 30px 10px;
+    }
 
     /* CONTENT */
     .content {
@@ -370,6 +392,10 @@ footer {
     /* PACKAGE */
     .packages {
         padding: 60px 20px 100px 20px;
+    }
+
+    .package p {
+        font-size: 20px;
     }
 
     .packages>.package {
@@ -387,5 +413,44 @@ footer {
         border: 2px solid #222831;
         padding: 20px;
         font-size: 20px;
+    }
+}
+
+/* SLIDESHOW */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 1px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 2;
+}
+
+.dot-m {
+    z-index: 2;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
     }
 }
